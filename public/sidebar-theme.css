@@ -1,0 +1,10 @@
+.sidebar{background:#59616d}
+.nav-item{color:#e0e4ea}
+.nav-item:hover{background:#ffffff16;color:#fff}
+.nav-item.active{background:#737c89;box-shadow:inset 3px 0 #a9bbff}
+.side-label{color:#d0d5dd}
+.status-card{background:#4d5561;border-color:#707987}
+.status-card small{color:#d1d6df}
+.logout-button{color:#e0e4ea}
+.brand{gap:11px;padding-right:4px;padding-left:4px}
+.brand-caption{max-width:145px;color:#f1f3f6;font-size:9px;font-weight:800;letter-spacing:.8px;line-height:1.45}

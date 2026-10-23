@@ -1,0 +1,26 @@
+.dashboard-panel{margin-top:0}
+.quick-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:20px 23px}
+.quick-action{display:flex;align-items:center;gap:12px;min-width:0;padding:16px;background:#fff;border:1px solid var(--border);border-radius:10px;text-align:left;color:#33435a;transition:border-color .15s,box-shadow .15s,transform .15s}
+.quick-action:hover{border-color:#b8c8f5;box-shadow:0 5px 16px rgba(24,43,76,.07);transform:translateY(-1px)}
+.quick-action>span:nth-child(2){display:grid;gap:5px;min-width:0}
+.quick-action b{font-size:12px}
+.quick-action small{font-size:10px;color:var(--muted)}
+.quick-arrow{margin-left:auto;color:#8290a4;font-size:18px}
+.welcome-banner{position:relative;display:flex;align-items:center;min-height:235px;overflow:hidden;margin:0 0 23px;border:1px solid #1d4da5;border-radius:14px;background:#09276e;box-shadow:0 10px 28px rgba(18,54,121,.13)}
+.welcome-banner::before{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(7,35,99,.9) 0%,rgba(7,35,99,.68) 34%,rgba(7,35,99,.08) 100%);content:""}
+.welcome-copy{position:relative;z-index:2;width:100%;padding:30px 34px;color:#fff}
+.welcome-copy .eyebrow{color:#b5ccff}
+.welcome-copy h2{margin:0;color:#fff;font:800 25px Manrope,sans-serif;letter-spacing:-.55px;line-height:1.35}
+.welcome-copy h2 span{color:#ffcf70}
+.welcome-copy>p:last-child{margin:10px 0 0;color:#d4e1ff;font-size:13px}
+.welcome-banner>img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
+.entry-page{overflow:visible}
+.entry-page>.panel-heading{padding:20px 24px}
+.entry-form-host{padding:22px 24px 25px}
+.entry-form-host .form-panel{border:0;padding:0;margin:0}
+.entry-form-host .form-panel-title{display:none}
+.entry-form-host .form-grid{gap:18px}
+.entry-form-host .form-actions{padding-top:10px}
+@media(max-width:900px){.quick-actions{grid-template-columns:1fr}.quick-action{padding:14px}}
+@media(max-width:700px){.welcome-banner{min-height:210px}.welcome-copy{padding:24px}.welcome-copy h2{font-size:21px}}
+@media(max-width:560px){.entry-form-host{padding:16px}.entry-page>.panel-heading{padding:18px 16px}.welcome-banner{min-height:190px}.welcome-copy{padding:20px}.welcome-copy h2{font-size:19px}.welcome-copy>p:last-child{font-size:11px}}
